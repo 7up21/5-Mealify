@@ -1,0 +1,95 @@
+/*! Container  */
+
+@media screen and (min-width: 1400px) {
+  .container {
+    max-width: 82.5rem;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .container {
+    max-width: 71.25rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 60rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 45rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 33.75rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    padding-inline: 0.9375rem;
+  }
+}
+
+/* !=============== Header ============== */
+
+@media screen and (min-width: 1200px) {
+  header.container {
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  header .container {
+    justify-content: center;
+    margin-block: auto;
+    flex-direction: column-reverse;
+  }
+
+  header .container > * {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  header .container .header-content {
+    margin-top: 1.875rem;
+  }
+
+  .btn-main {
+    --border-radius: 100vh;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  header .btn-group {
+    flex-direction: column;
+  }
+}
+
+/*! ===============  ============== */
+
+@media screen and (min-width: 87.5rem) {
+}
+
+@media screen and (max-width: 87.5rem) {
+}
+
+@media screen and (max-width: 75rem) {
+}
+
+@media screen and (max-width: 62rem) {
+}
+
+@media screen and (max-width: 48rem) {
+}
+
+@media screen and (max-width: 36rem) {
+}
