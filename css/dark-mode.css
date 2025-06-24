@@ -1,0 +1,21 @@
+:root:has(.mode input:checked) {
+  --primary-hue: 35;
+  --primary-lightness: 44%;
+  --primary-saturation: 72%;
+  --light-hue: 0;
+  --light-saturation: 0%;
+  --light-lightness: 9%;
+  --color-default: #fff;
+  --color-scecondary: #fff;
+  --color-tertiary: #9f9f9f;
+  --color-light: rgb(23, 23, 23);
+  --color-light-gray: rgb(37, 37, 37);
+}
+
+body:has(.mode input:checked) .mode .light {
+  display: block;
+}
+
+body:has(.mode input:checked) .mode .dark {
+  display: none;
+}
