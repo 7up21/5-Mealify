@@ -13,6 +13,9 @@
   --section-bg-2: rgb(32, 32, 32);
 }
 
+body:has(.mode input:checked) .info-contact li {
+  background-color: #0e0e0e;
+}
 body:has(.mode input:checked) .mode .light {
   display: block;
 }

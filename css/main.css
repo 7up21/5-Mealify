@@ -127,7 +127,7 @@ img {
 }
 
 .main-title h2 {
-  color: #7f7f90;
+  color: var(--color-tertiary);
   text-transform: uppercase;
   font-weight: 400;
   font-family: var(--font-secondary);
@@ -573,4 +573,135 @@ header picture:hover {
   padding-top: 0.625rem;
   width: 80%;
   font-weight: 400;
+}
+
+/*todo =============== Contact ============== */
+
+#contact {
+  background-color: var(--section-bg-2);
+  padding-bottom: 50px;
+}
+
+iframe {
+  width: 100%;
+  height: 25rem;
+  margin-bottom: 10px;
+}
+
+.info-contact {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.info-contact li {
+  background-color: #f5f5f5;
+  display: flex;
+  --gap: 0.625rem;
+  gap: var(--gap);
+  width: calc(50% - var(--gap));
+  margin-block: 0.625rem;
+  padding: 1.875rem;
+  align-items: center;
+}
+
+.info-contact li i {
+  background-color: var(--color-primary);
+  font-size: 1.125rem;
+  color: var(--color-light);
+  border-radius: 100vh;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-contact li h3 {
+  font-weight: 700;
+  font-family: var(--font-secondary);
+  size: 1.25rem;
+  color: var(--color-tertiary);
+}
+
+.time {
+  font-weight: 700;
+}
+
+form {
+  background-color: var(--color-light);
+  box-shadow: rgba(0, 0, 0, 0.106) 0px 0px 14px 0px;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+form ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  gap: 20px;
+}
+
+.half-li {
+  width: calc(50% - 10px);
+}
+
+input {
+  width: 100%;
+  height: 50px;
+  border: var(--color-light-gray) 2px solid;
+  padding-left: 20px;
+  transition: border var(--animation-duration);
+}
+
+.subject {
+  width: 100%;
+}
+
+.text-area {
+  width: 100%;
+}
+
+textarea {
+  resize: vertical;
+  width: 100%;
+  height: 150px;
+  border: var(--color-light-gray) 2px solid;
+  padding: 10px 0 0 20px;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: var(--font-default);
+  transition: border var(--animation-duration);
+}
+
+input:focus {
+  border: 2px solid var(--color-primary);
+  outline: none;
+}
+textarea:focus {
+  border: 2px solid var(--color-primary);
+  outline: none;
+}
+
+button.btn {
+  background-color: var(--color-primary);
+  border-radius: 100vh;
+  padding: 15px 40px;
+  font-size: 0.9375rem;
+  font-weight: 400;
+}
+
+button.btn:hover {
+  background-color: hsl(
+    var(--primary-hue),
+    var(--primary-saturation),
+    calc(var(--primary-lightness) + 10%)
+  );
+  color: var(--color-light);
+}
+
+.button-xd {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }

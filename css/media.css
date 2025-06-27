@@ -176,3 +176,17 @@
     padding-bottom: 50px;
   }
 }
+
+/*! =============== Contact ============== */
+
+@media screen and (max-width: 992px) {
+  .half-li {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .info-contact li {
+    width: 100%;
+  }
+}
