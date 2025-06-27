@@ -72,7 +72,7 @@
 /* !=============== Header ============== */
 
 @media screen and (min-width: 1200px) {
-  header{
+  header {
     min-height: 100vh;
   }
 }
@@ -107,20 +107,16 @@
   }
 }
 
-@media screen and (min-width: 87.5rem) {
+/* !=============== chefs ============== */
+
+@media screen and (max-width: 992px) {
+  #chefs .container .chefs-card {
+    width: calc(calc(100% - var(--gap)) / 2);
+  }
 }
 
-@media screen and (max-width: 87.5rem) {
-}
-
-@media screen and (max-width: 75rem) {
-}
-
-@media screen and (max-width: 62rem) {
-}
-
-@media screen and (max-width: 48rem) {
-}
-
-@media screen and (max-width: 36rem) {
+@media screen and (max-width: 768px) {
+  #chefs .container .chefs-card {
+    width: 100%;
+  }
 }

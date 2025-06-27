@@ -10,6 +10,7 @@
   --color-tertiary: #9f9f9f;
   --color-light: rgb(23, 23, 23);
   --color-light-gray: rgb(37, 37, 37);
+  --section-bg-2: rgb(32, 32, 32);
 }
 
 body:has(.mode input:checked) .mode .light {
@@ -17,5 +18,17 @@ body:has(.mode input:checked) .mode .light {
 }
 
 body:has(.mode input:checked) .mode .dark {
+  display: none;
+}
+
+body:has(.mode input:checked) #chefs .chef-1-dark,
+body:has(.mode input:checked) #chefs .chef-2-dark,
+body:has(.mode input:checked) #chefs .chef-3-dark {
+  display: block;
+}
+
+body:has(.mode input:checked) #chefs .chef-1-light,
+body:has(.mode input:checked) #chefs .chef-2-light,
+body:has(.mode input:checked) #chefs .chef-3-light {
   display: none;
 }
