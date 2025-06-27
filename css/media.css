@@ -120,3 +120,59 @@
     width: 100%;
   }
 }
+
+/* !=============== gallery ============== */
+
+@media screen and (max-width: 1200px) {
+  .gallery-items {
+    height: 56.25rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .gallery-items {
+    height: 87.5rem;
+  }
+  .gallery-items picture.pizza {
+    order: 0;
+  }
+
+  .gallery-items picture.Burger {
+    order: 1;
+  }
+
+  .gallery-items picture.Levitation-pizza {
+    order: 2;
+  }
+
+  .gallery-items picture.Frittata {
+    order: 3;
+  }
+
+  .gallery-items picture.Beef-steaks {
+    order: 4;
+  }
+
+  .gallery-items picture.Crispy-Fried-Chicken {
+    order: 5;
+  }
+
+  .gallery-items picture.Lyulya-kebab {
+    order: 6;
+  }
+
+  .gallery-items picture {
+    width: calc(calc(100% - var(--gap) * 1) / 2);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .gallery-items picture {
+    width: 100%;
+  }
+
+  .gallery-items {
+    height: inherit;
+    padding-bottom: 50px;
+  }
+}
